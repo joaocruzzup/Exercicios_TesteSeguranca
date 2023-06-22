@@ -5,12 +5,16 @@ import org.junit.Test;
 import org.mockito.Mockito;
 
 public class CalculadoraTeste {
+
+    // Teste com Junit
     @Test
     public void multiplicarDoiNumerosJUNIT(){
         Calculadora calculadora = new Calculadora();
         int multiplicacao = calculadora.multiplicar(10, 5);
         Assert.assertEquals(50, multiplicacao);
     }
+
+    // Teste com Mock
     @Test
     public void multiplicarDoisNumeros(){
         Calculadora calculadoraMock = Mockito.mock(Calculadora.class);
